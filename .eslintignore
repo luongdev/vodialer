@@ -1,0 +1,10 @@
+
+.DS_Store
+*._*
+.idea
+.vscode
+node_modules
+dist
+dist-ssr
+*.local
+.npmrc

@@ -1,0 +1,55 @@
+:root {
+  /** Body */
+  --app-body-text-color: var(--el-text-color-primary);
+  --app-body-bg-color: var(--el-bg-color-page);
+  --app-header-height: calc(
+    var(--app-navigationbar-height) + var(--app-tagsview-height) + var(--app-header-border-bottom-width)
+  );
+  --app-header-bg-color: var(--el-bg-color);
+  --app-header-box-shadow: var(--el-box-shadow-lighter);
+  --app-header-border-bottom-width: 1px;
+  --app-header-border-bottom: var(--app-header-border-bottom-width) solid var(--el-fill-color);
+  --app-navigationbar-height: 50px;
+  --app-navigationbar-text-color: var(--el-text-color-regular);
+  --app-sidebar-width: 220px;
+  --app-sidebar-hide-width: 58px;
+  --app-sidebar-border-right: 1px solid var(--el-fill-color);
+  --app-sidebar-menu-item-height: 60px;
+  --app-sidebar-menu-tip-line-bg-color: var(--el-color-primary);
+  --app-sidebar-menu-bg-color: #001428;
+  --app-sidebar-menu-hover-bg-color: #409eff10;
+  --app-sidebar-menu-text-color: #cfd3dc;
+  --app-sidebar-menu-active-text-color: #ffffff;
+  --app-tagsview-height: 34px;
+  --app-tagsview-text-color: var(--el-text-color-regular);
+  --app-tagsview-tag-active-text-color: #ffffff;
+  --app-tagsview-tag-bg-color: var(--el-bg-color);
+  --app-tagsview-tag-active-bg-color: var(--el-color-primary);
+  --app-tagsview-tag-border-radius: 2px;
+  --app-tagsview-tag-border-color: var(--el-border-color-lighter);
+  --app-tagsview-tag-active-border-color: var(--el-color-primary);
+  --app-tagsview-tag-icon-hover-bg-color: #00000030;
+  --app-tagsview-tag-icon-hover-color: #ffffff;
+  --app-tagsview-contextmenu-text-color: var(--el-text-color-regular);
+  --app-tagsview-contextmenu-hover-text-color: var(--el-text-color-primary);
+  --app-tagsview-contextmenu-bg-color: var(--el-bg-color-overlay);
+  --app-tagsview-contextmenu-hover-bg-color: var(--el-fill-color);
+  --app-tagsview-contextmenu-box-shadow: var(--el-box-shadow);
+  --app-hamburger-text-color: var(--el-text-color-primary);
+  --app-rightpanel-button-bg-color: #001428;
+}
+
+body.content-large {
+  --app-header-height: var(--app-tagsview-height);
+  --app-navigationbar-height: 0px;
+  --app-sidebar-width: 0px;
+  --app-sidebar-hide-width: 0px;
+}
+
+body.content-full {
+  --app-header-height: 0px;
+  --app-navigationbar-height: 0px;
+  --app-sidebar-width: 0px;
+  --app-sidebar-hide-width: 0px;
+  --app-tagsview-height: 0px;
+}
